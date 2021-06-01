@@ -1,4 +1,4 @@
-# 每天6:30执行
+# 默认每天6:30执行，cron使用格林威治标准时间，时差8小时
 
 name: Start
 
@@ -6,7 +6,8 @@ on:
    push:
    gollum:
    schedule:
-       - cron: '30 22 * * *'
+       - cron: '00 16 * * *' #北京时间00:00运行
+       - cron: '00 04 * * *' #北京时间12:00运行
 
 jobs:
   TiebaSignIn:
