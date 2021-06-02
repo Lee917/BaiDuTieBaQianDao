@@ -6,8 +6,7 @@ on:
    push:
    gollum:
    schedule:
-       - cron: '00 16 * * *' #北京时间00:00运行
-       - cron: '00 04 * * *' #北京时间12:00运行
+       - cron: '00 16,05 * * *' #在北京时间00:00和12:00运行
 
 jobs:
   TiebaSignIn:
